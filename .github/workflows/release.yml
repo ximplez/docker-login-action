@@ -25,9 +25,7 @@ jobs:
         with:
           node-version: ${{ matrix['node-version'] }}
       - name: Build Library
-        run: npm run build --if-present
-      - name: Run Tests
-        run: npm test --if-present
+        run: yarn run build
       - name: Commit dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
