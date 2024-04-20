@@ -26,7 +26,6 @@ jobs:
           node-version: ${{ matrix['node-version'] }}
       - name: Build Library
         run: |
-          npm i -g @vercel/ncc
           yarn install
           yarn run build
       - name: Commit dist
