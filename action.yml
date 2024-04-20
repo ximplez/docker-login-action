@@ -7,6 +7,12 @@ branding:
   color: 'blue'
 
 inputs:
+  configPath:
+    description: 'Docker registry config. json type'
+    required: false
+  configKey:
+    description: 'Docker registry config json key. json type'
+    required: false
   registry:
     description: 'Server address of Docker registry. If not set then will default to Docker Hub'
     required: false
