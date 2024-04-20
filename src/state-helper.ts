@@ -5,7 +5,6 @@ export const logout = /true/i.test(process.env['STATE_logout'] || '');
 
 export function setRegistry(registry: string) {
   core.saveState('registry', registry);
-  core.setSecret()
 }
 
 export function setLogout(logout: boolean) {
