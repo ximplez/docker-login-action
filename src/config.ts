@@ -34,7 +34,7 @@ export function loadConfig(input: context.Inputs) {
     input.registry = config[input.configKey].registry;
     input.username = config[input.configKey].username;
     input.password = config[input.configKey].password;
-    core.exportVariable('registry', input.registry);
+    core.exportVariable('REGISTRY', input.registry);
     core.info('✅ [loadConfig] success.');
     return;
   }
