@@ -1,7 +1,7 @@
 # https://help.github.com/en/articles/metadata-syntax-for-github-actions
-name: 'Docker Login'
+name: 'Docker Login With Config'
 description: 'GitHub Action to login against a Docker registry'
-author: 'docker'
+author: 'ximplez'
 branding:
   icon: 'anchor'
   color: 'blue'
